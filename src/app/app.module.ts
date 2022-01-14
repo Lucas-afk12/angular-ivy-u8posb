@@ -13,9 +13,18 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { InputClearable } from './search/search.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, BottomSheetComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    BottomSheetComponent,
+    InputClearable,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -27,6 +36,9 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     MatSidenavModule,
     MatToolbarModule,
     MatBottomSheetModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
